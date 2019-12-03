@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <link rel="shortcut icon" href="film.png" type="image/x-icon">
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(168, 78, 168);
+    }
+
+    .container {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    h1 {
+        margin: 30px;
+        color: white;
+        padding: 20px;
+        font-size: 275%;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    .title {
+        flex-grow: 150px;
+    }
+
+    .item {
+        width: 250px;
+        flex-grow: 1;
+        margin: 15px;
+    }
+
+    .item img {
+        width: 100%;
+        box-shadow: 0 0 3px 3px #868484;
+
+    }
+
+    .item:hover {
+        transform: scale(1.3);
+    }
+
+    .movies {
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 30px;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+.icon  {
+    color: rgb(92, 92, 230);
+    width: 100%;
+    height: 100%;
+}
+    @media screen and (max-width: 700px) {
+        .menu {
+
+            display: none;
+            text-align: center;
+            size: 150%;
+        }
+
+        .container {
+
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="title">
+                <h1>Filmer</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="https://www.google.se/" target="_blank">Google</a></li>
+                    <li><a href="https://www.hd.se" target="_blank">Hd</a></li>
+                    <li><a href="https://www.filmstaden.se/familj/" target="_blank">Filmstaden</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="movies">
+        <div class="item"><img src="adams.webp" alt="bild"></div>
+        <div class="item"><img src="ailos.webp" alt="bild"></div>
+        <div class="item"><img src="alfons.webp" alt="bild"></div>
+        <div class="item"><img src="arne.webp" alt="bild"></div>
+        <div class="item"><img src="film.webp" alt="bild"></div>
+        <div class="item"><img src="frost.webp" alt="bild"></div>
+        <div class="item"><img src="monster.webp" alt="bild"></div>
+        <div class="item"><img src="pelle.webp" alt="bild"></div>
+        <div class="item"><img src="sune.webp" alt="bild"></div>
+        <div class="item"><img src="tito.webp" alt="bild"></div>
+        <div class="item"><img src="toys.webp" alt="bild"></div>
+    </div>
+
+    <footer>
+        <div class="icon"> Emelie © 2019         <i class="fab fa-app-store-ios"></i>      </div>
+    </footer>
+</body>
+
+</html>
